@@ -17,3 +17,45 @@
     <div class="right-button"> > </div>
   </div>
 */
+
+
+function cardCarousel() {
+  // create elements
+  const carousel = document.createElement('div');
+  const leftBtn = document.createElement('div');
+  const imgMount = document.createElement('img');
+  const imgComp = document.createElement('img');
+  const imgTrees = document.createElement('img');
+  const imgTurn = document.createElement('img');
+  const rightBtn = document.createElement('div');
+
+  // create structure
+  carousel.appendChild(leftBtn);
+  carousel.appendChild(imgMount);
+  carousel.appendChild(imgComp);
+  carousel.appendChild(imgTrees);
+  carousel.appendChild(imgTurn);
+  carousel.appendChild(rightBtn);
+  
+  // set the content
+  leftBtn.textContent = '<';
+  rightBtn.textContent = '>';
+  imgMount.src = "./assets/carousel/mountains.jpeg"
+  imgComp.src = "./assets/carousel/computer.jpeg"
+  imgTrees.src = "./assets/carousel/trees.jpeg"
+  imgTurn.src = "./assets/carousel/turntable.jpeg"
+
+  // apply styles
+  carousel.classList.add('carousel');
+  leftBtn.classList.add('left-button');
+  rightBtn.classList.add('right-button');
+
+  console.log(carousel);
+  return carousel;
+}
+
+const container = document.querySelector('.carousel-container');
+test = cardCarousel();
+container.appendChild(cardCarousel());
+console.log(container);
+
