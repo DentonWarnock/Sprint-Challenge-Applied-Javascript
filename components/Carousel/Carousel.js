@@ -49,6 +49,8 @@ function cardCarousel() {
   carousel.classList.add('carousel');
   leftBtn.classList.add('left-button');
   rightBtn.classList.add('right-button');
+  imgMount.classList.add('display');
+  
 
   console.log(carousel);
   return carousel;
